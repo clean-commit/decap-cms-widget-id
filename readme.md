@@ -66,6 +66,7 @@ This widget fields:
 
 ### Additional guides
 
+- [Permalink widget for Netlify CMS](https://github.com/clean-commit/netlify-cms-widget-permalink)
 - [Efficient Netlify CMS config with Manual Initialization](https://mrkaluzny.com/blog/dry-netlify-cms-config-with-manual-initialization?utm_source=GitHub&utm_medium=henlo-gatsby)
 - [How to optimize SEO with Gatsby & Netlify CMS](https://mrkaluzny.com/blog/how-to-optimize-seo-with-gatsby-netlify?utm_source=GitHub&utm_medium=henlo-gatsby)
 - [Full text search with Gatsby & Netlify CMS](https://mrkaluzny.com/blog/full-text-search-with-gatsby-and-netlify-cms?utm_source=GitHub&utm_medium=henlo-gatsby)
