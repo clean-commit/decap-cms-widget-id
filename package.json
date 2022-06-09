@@ -1,6 +1,6 @@
 {
   "name": "netlify-cms-widget-id",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Id widget for Netlify CMS",
   "main": "./dist/index.js",
   "files": [
