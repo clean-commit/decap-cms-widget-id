@@ -1,10 +1,10 @@
-# Netlify CMS ID Widget
+# Decap CMS ID Widget
 
-Netlify CMS Widget that allows you to create permanent IDs for your content.
+Decap CMS Widget that allows you to create permanent IDs for your content.
 
-Widgets are inputs for the Netlify CMS editor interface. It's a React component that receives user input and outputs a serialized value.
+Widgets are inputs for the Decap CMS editor interface. It's a React component that receives user input and outputs a serialized value.
 
-This widget allows you to create custom permalinks that can be used to generate pathnames for Netlify CMS based websites. The widget mimics the behaviour of WordPress permalink input field automatically outputting correct slugs.
+This widget allows you to create custom permalinks that can be used to generate pathnames for Decap CMS based websites. The widget mimics the behaviour of WordPress permalink input field automatically outputting correct slugs.
 
 ![ID widget](./assets/netlify-cms-widget-id.png)
 
@@ -13,14 +13,14 @@ This widget allows you to create custom permalinks that can be used to generate 
 1. Install the widget
 
 ```
-npm install netlify-cms-widget-id
-yarn add netlify-cms-widget-id
+npm install decap-cms-widget-id
+yarn add decap-cms-widget-id
 ```
 
 2. Import the Permalink widget to your Netlify CMS setup file
 
 ```
-import { Widget as IdWidget } from 'netlify-cms-widget-id';
+import { Widget as IdWidget } from 'decap-cms-widget-id';
 ```
 
 3. Register the widget for use
@@ -47,7 +47,7 @@ collections:
         prefix: 'post', // This allows to add a prefix to the ID
 ```
 
-You can also use it as a JS object using Netlify CMS [Manual Initialization](https://www.netlifycms.org/docs/beta-features/#manual-initialization)
+You can also use it as a JS object using Netlify CMS [Manual Initialization](https://decapcms.org/docs/manual-initialization/)
 
 Example:
 
@@ -66,7 +66,7 @@ This widget fields:
 
 ### Additional guides
 
-- [Permalink widget for Netlify CMS](https://github.com/clean-commit/netlify-cms-widget-permalink)
-- [Efficient Netlify CMS config with Manual Initialization](https://mrkaluzny.com/blog/dry-netlify-cms-config-with-manual-initialization?utm_source=GitHub&utm_medium=henlo-gatsby)
+- [Permalink widget for Decap CMS](https://github.com/clean-commit/decap-cms-widget-permalink)
+- [Efficient Netlify CMS config with Manual Initialization](https://mrkaluzny.com/blog/dry-decap-cms-config-with-manual-initialization/?utm_source=GitHub&utm_medium=henlo-gatsby)
 - [How to optimize SEO with Gatsby & Netlify CMS](https://mrkaluzny.com/blog/how-to-optimize-seo-with-gatsby-netlify?utm_source=GitHub&utm_medium=henlo-gatsby)
-- [Full text search with Gatsby & Netlify CMS](https://mrkaluzny.com/blog/full-text-search-with-gatsby-and-netlify-cms?utm_source=GitHub&utm_medium=henlo-gatsby)
+- [Full text search with Gatsby & Decap CMS](https://mrkaluzny.com/blog/full-text-search-with-gatsby-and-decap-cms?utm_source=GitHub&utm_medium=henlo-gatsby)
