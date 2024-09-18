@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import shortid from 'shortid';
 import PropTypes from 'prop-types';
 
@@ -35,46 +35,43 @@ const button = {
   marginRight: '8px',
 };
 
-export class Control extends React.Component {
-  generateId() {
-    const { field } = this.props;
+export const Control = ({ field, forID, value, onChange }) => {
+  useEffect(() => {
+    if (!value) {
+      onChange(generateId());
+    }
+  }, []);
+
+  const generateId = () => {
     const usePrefix = field.get('prefix');
     const prefix = usePrefix ? usePrefix + '-' : '';
     return prefix + shortid();
-  }
+  };
 
-  render() {
-    const { forID, value, onChange } = this.props;
-    this.generateId = this.generateId.bind(this);
-    if (!value) {
-      onChange(this.generateId());
-    }
-
-    return (
-      <div style={wrapper}>
-        <input
-          type='hidden'
-          id={forID}
-          value={value}
-          onChange={(e) => onChange(e.target.value.trim())}
-        />
-        <span
-          style={{
-            lineHeight: '1.6em',
-          }}>
-          {value || this.generateId()}
-        </span>
-        <button
-          onClick={() => {
-            onChange(this.generateId());
-          }}
-          style={button}>
-          Regenerate ID
-        </button>
-      </div>
-    );
-  }
-}
+  return (
+    <div style={wrapper}>
+      <input
+        type='hidden'
+        id={forID}
+        value={value}
+        onChange={(e) => onChange(e.target.value.trim())}
+      />
+      <span
+        style={{
+          lineHeight: '1.6em',
+        }}>
+        {value || generateId()}
+      </span>
+      <button
+        onClick={() => {
+          onChange(generateId());
+        }}
+        style={button}>
+        Regenerate ID
+      </button>
+    </div>
+  );
+};
 
 Control.propTypes = {
   onChange: PropTypes.func.isRequired,

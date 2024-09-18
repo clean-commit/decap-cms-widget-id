@@ -1,6 +1,6 @@
 {
-  "name": "netlify-cms-widget-id",
-  "version": "1.0.1",
+  "name": "decap-cms-widget-id",
+  "version": "2.0.0",
   "description": "Id widget for Netlify CMS",
   "main": "./dist/index.js",
   "files": [
@@ -10,10 +10,10 @@
   "keywords": [],
   "author": "Wojciech Kaluzny <wk@cleancommit.io>",
   "license": "MIT",
-  "repository": "https://github.com/clean-commit/netlify-cms-widget-permalink",
+  "repository": "https://github.com/clean-commit/decap-cms-widget-id",
   "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
