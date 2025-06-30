@@ -15,3 +15,6 @@ collections:
             widget: id
             regenerate: false
             prefix: pre
+          - name: string_for_testing
+            label: String Widget
+            widget: string

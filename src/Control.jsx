@@ -47,7 +47,7 @@ export default class Control extends React.Component {
   };
 
   static defaultProps = {
-    value: '',
+    value: ''
   };
 
   // The selection to maintain for the input element
@@ -59,6 +59,10 @@ export default class Control extends React.Component {
   componentDidMount() {
     // Manually validate PropTypes - React 19 breaking change
     PropTypes.checkPropTypes(Control.propTypes, this.props, 'prop', 'Control');
+    // Set a default if there is not one already:
+    if ( !this.props.value ) {
+      this.props.onChange( this.generateId() );
+    }
   }
 
   // NOTE: This prevents the cursor from jumping to the end of the text for
